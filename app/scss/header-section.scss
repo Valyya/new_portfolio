@@ -1,0 +1,127 @@
+.home .container-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 0rem;
+
+  .home-content {
+    max-width: 400px;
+    width: 100%;
+
+    h3 {
+      padding-top: 2rem;
+      font-size: 3rem;
+      font-weight: 400;
+      text-align: left;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .btn {
+      margin-bottom: 2rem;
+    }
+  }
+  .home-img {
+    max-width: 37%;
+    // width: 100%;
+    img {
+      width: 400px;
+      width: 100%;
+      animation: floatImage 4s ease-in-out infinite;
+    }
+  }
+}
+.static-txt {
+  color: $color00;
+  margin: 1rem 0 0 0;
+  //   display: inline-flex;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.txt {
+  display: inline-flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+
+  .dynamic-txt {
+    height: 7rem;
+
+    overflow: hidden;
+    color: $color;
+    position: relative;
+    top: 0px;
+
+    span {
+      line-height: 1.2;
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 600;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 50%;
+        width: 100%;
+        background: $bg;
+        border-left: 2px solid $color;
+        animation: typing 6s steps(10) infinite;
+      }
+    }
+  }
+}
+
+.txt .dynamic-txt .dark span:after {
+  background: $bgdark;
+}
+@keyframes typing {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.social-media {
+  display: flex;
+  //   justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.social-media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  background: transparent;
+  border: 0.2rem solid $color00;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: $color00;
+  margin: 2rem 1rem 2rem 0;
+  transition: 0.5s ease;
+}
+.social-media a:hover {
+  background: $color00;
+  color: $colorWhiteText;
+  box-shadow: 0 0 1rem $color00;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

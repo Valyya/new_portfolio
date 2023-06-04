@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>weblettop</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">
+          <img src="../img/logo01.png" />
+          <i class="bx bx-menu" id="menu-icon"></i>
+        </div>
+
+        <div class="header-right">
+          <nav class="nav-bar" id="side-menu">
+            <ul>
+              <li><a href="index.html#home" class="links active">Home</a></li>
+              <li><a href="index.html#about" class="links">About</a></li>
+              <li>
+                <a href="index.html#portfolio" class="links">Portfolio</a>
+              </li>
+              <li><a href="index.html#team" class="links">Team</a></li>
+              <li><a href="index.html#contact" class="links">Contact</a></li>
+              <li>
+                <input type="checkbox" id="toggle" />
+                <label class="toggle" for="toggle">
+                  <span class="ball"></span>
+                </label>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- progress-bar scropll -->
+        <div class="section-progress-bar">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <!-- end progress-bar scropll -->
+      </header>
+
+      <!-- <script src="js/new.js"></script> -->
+    </div>
+
+    <!-- home section desing -->
+    <section class="home" id="home">
+      <div class="container-wrap">
+        <div class="home-content">
+          <h3>Привіт!</h3>
+
+          <div class="static-txt">Мене звати</div>
+          <div class="txt">
+            <div class="dynamic-txt">
+              <span>Валентина </span><span> Очковська</span>
+            </div>
+          </div>
+
+          <p>
+            Використовую в роботі нові інструменти веб-дизайну та програмування
+            для створення красивих і функціональних сайтів та веб-застосунків
+          </p>
+          <div class="social-media">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          <a href="#portfolio" class="btn">Далі</a>
+        </div>
+        <div class="home-img">
+          <img src="../img/hero-area.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- about section design -->
+    <section class="about" id="about">
+      <h2>Про<span>себе</span></h2>
+      <div class="container-wrap">
+        <div class="container-img">
+          <div class="about-img">
+            <img src="../img/hero-area.jpg" alt="" />
+          </div>
+        </div>
+        <div class="container-about">
+          <div class="about-content">
+            <div class="box">
+              <h4><i class="bx bx-code-alt"></i>Fronted Developer</h4>
+
+              <div class="box-item">
+                Бути фахівцем,який займається написанням, оновленням,
+                виправленням алгоритмів для додатків, сайтів і окремих
+                елементів, з використанням різних мов програмування, для мене є
+                робота і задоволення.
+              </div>
+            </div>
+            <div class="box">
+              <h4><i class="bx bxs-paint"></i>Знання та вміння</h4>
+
+              <div class="box-item">
+                В роботі використавую мови програмування PHP. Javascript. HTML і
+                CSS3, як мови мова розмітки і каскадні таблиці стилів.Вмію
+                верстати адаптивні сайти під планшети та мобільні пристрої,
+                фраємворк Bootstrap.
+              </div>
+            </div>
+            <div class="box">
+              <h4><i class="bx bx-bar-chart-alt"></i>Самоосвіта</h4>
+              <div class="box-item">
+                лист Курси в інтернеті, відеокурси, книги, документація, форуми,
+                статті...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- servises section design -->
+    <section class="servises" id="servises">
+      <h2>Професійні<span>навички</span></h2>
+      <div class="container-wrap">
+        <div class="skill">
+          <span>Html</span>
+          <span>css/scss</span>
+          <span>javascript</span>
+          <span>Wordpress/Opencart</span>
+          <span>Bootstrap</span>
+          <span>Gulp</span>
+        </div>
+      </div>
+    </section>
+    <!--  section portfolio -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Останні<span>проекти</span></h2>
+
+      <div class="container-wrap">
+        <div class="portfolio-container">
+          <div class="portfolio-box">
+            <img src="../img/hero-area.jpg" alt="" />
+            <div class="portfolio-item">
+              <h4>Корпоративний сайт</h4>
+              <p>Адаптив, Bootstrap</p>
+            </div>
+            <div class="portfolio-layer">
+              <a href="#" class="open-popup"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+            <div class="popup__bg">
+              <div class="popup">
+                <img src="../img/img0011.jpg" class="close-popup" />
+                <!-- <a href="portfolio1.html"><i class="bx bx-x"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-box">
+            <img src="../img/hero-area.jpg" alt="" />
+            <div class="portfolio-item">
+              <h4>Корпоративний сайт</h4>
+              <p>Адаптив, Bootstrap</p>
+            </div>
+            <div class="portfolio-layer">
+              <a href=""><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-box">
+            <img src="../img/hero-area.jpg" alt="" />
+            <div class="portfolio-item">
+              <h4>Корпоративний сайт</h4>
+              <p>Адаптив, Bootstrap</p>
+            </div>
+            <div class="portfolio-layer">
+              <a href="#" class="open-popup"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+            <!-- <div class="popup__bg">
+          <div class="popup">
+            <img src="images/close.svg" class="close-popup" />
+          </div>
+        </div> -->
+          </div>
+          <div class="portfolio-box">
+            <img src="../img/hero-area.jpg" alt="" />
+            <div class="portfolio-item">
+              <h4>Корпоративний сайт</h4>
+              <p>Адаптив, Bootstrap</p>
+            </div>
+            <div class="portfolio-layer">
+              <a href="#"><i class="bx bx-link-external"></i>222</a>
+            </div>
+          </div>
+          <div class="portfolio-box">
+            <img src="../img/hero-area.jpg" alt="" />
+            <div class="portfolio-item">
+              <h4>Корпоративний сайт</h4>
+              <p>Адаптив, Bootstrap</p>
+            </div>
+            <div class="portfolio-layer">
+              <a href=""><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section design  -->
+    <section class="contact" id="contact">
+      <h2><span>Контакти</span></h2>
+      <div class="container-wrap">
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Mobail Number" />
+            <input type="text" placeholder="Email Subject" />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <input type="submit" value="Відправити" class="btn" />
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Codehal | All Rights Rasarved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <script src="js/new.js"></script>
+  </body>
+</html>

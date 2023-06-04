@@ -1,0 +1,366 @@
+.about {
+  background: $color001;
+  color: $color1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  span {
+    margin-left: 1rem;
+    color: $color;
+  }
+  .container-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+    .container-img {
+      max-width: 45%;
+      // width: 100%;
+      // height: 35vh;
+
+      img {
+        max-width: 400px;
+        width: 100%;
+      }
+    }
+    .container-about {
+      max-width: 45%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .box {
+        margin: 0 0 1rem 2rem;
+        text-align: center;
+
+        h4 {
+          text-align: left;
+          font-size: 1.2rem;
+        }
+        .box-item {
+          margin-left: 1rem;
+          display: inline-flex;
+          align-items: center;
+          font-size: 0.7rem;
+          text-align: left;
+        }
+        i {
+          padding-right: 1rem;
+          font-size: 1.6rem;
+        }
+
+        h3 {
+          font-size: 2.6rem;
+        }
+      }
+    }
+  }
+}
+
+////////////////
+.servises {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+  h2 {
+    font-size: 2.6rem;
+    span {
+      color: $color;
+      margin-left: 1rem;
+    }
+  }
+  // background: radial-gradient($color1, $color001);
+}
+.container-wrap {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .skill {
+    margin-top: 3rem;
+    position: relative;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    span {
+      display: block;
+      color: $color001;
+      font-size: 1.3rem;
+      margin: 2rem;
+      padding: 50px 20px;
+      border-radius: 50%;
+      box-shadow: 0px 15px 5px #e0e0e0, inset 0 5px 0 #e0e0e0;
+      &:nth-child(1) {
+        border-right: 15px solid #8bdd88;
+      }
+      &:nth-child(2) {
+        border-right: 15px solid #ee310b;
+      }
+      &:nth-child(3) {
+        border-right: 15px solid #e20dbf;
+      }
+      &:nth-child(4) {
+        border-right: 15px solid #fbff12;
+      }
+      &:nth-child(5) {
+        border-right: 15px solid #08ffea;
+      }
+      &:nth-child(6) {
+        border-right: 15px solid #e20d70;
+      }
+    }
+  }
+}
+
+///////////////////////
+.portfolio {
+  background: $color001;
+  color: $color1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  span {
+    margin-left: 1rem;
+    color: $color;
+  }
+}
+
+.portfolio-container {
+  // width: 85vw;
+  margin: 2rem 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .portfolio-box {
+    max-width: 45%;
+    width: 100%;
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem $color00;
+    overflow: hidden;
+    display: flex;
+    margin: 0 2rem 2rem 0;
+    &:hover img {
+      transform: scale(1.1);
+    }
+    img {
+      width: 100%;
+      transition: 0.5s ease;
+    }
+    .portfolio-item {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 5rem 4rem;
+    }
+    .portfolio-layer {
+      pointer-events: auto;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.1), $color00);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      // padding: 0 4rem;
+      transform: translateY(100%);
+      transition: 0.5s ease;
+      i {
+        color: color1;
+      }
+    }
+    &:hover .portfolio-layer {
+      transform: translateY(0%);
+    }
+    h4 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 0.8rem;
+      margin: 0.3rem 0 1rem;
+    }
+    a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
+      height: 5rem;
+      background: $color1;
+      border-radius: 50%;
+      i {
+        font-size: 1.2rem;
+        color: $color001;
+        cursor: pointer;
+      }
+    }
+  }
+}
+// popup ***********************
+/* Важная часть */
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  /* // Скрываем фон и сам попап */
+  opacity: 0;
+  /* // Запрещаем ему быть целью событий */
+  pointer-events: none;
+  transition: 0.5s all;
+  z-index: 9999999;
+}
+
+.popup__bg.activePopup {
+  /* // При добавлении класса 'active' */
+  /* // Показываем фон и попап */
+  opacity: 1;
+  /* // Возвращаем события */
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.popup {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  /* // Центрируем и масштабируем в 0 само окно */
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 30vw;
+  // height: 10vw;
+
+  // padding: 25px;
+  transition: 0.5s all;
+}
+
+.popup.activePopup {
+  /* // При добавлении класса 'active' */
+  /* // Так же центрируем и плавно увеличиваем */
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+  img {
+    width: 100%;
+  }
+  a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+}
+/* Конец важной части */
+/* Далее код для стилизации формы */
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+//****************************
+.contact {
+  width: 100vw;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: auto;
+  flex-direction: column;
+  padding-top: 1rem;
+  h2 {
+    font-size: 2.6rem;
+
+    span {
+      color: $color;
+    }
+  }
+  .container-wrap {
+    margin: 0 auto;
+    form {
+      width: 85vw;
+      // margin: 1rem auto;
+      text-align: center;
+      margin-bottom: 3rem;
+      .input-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        input {
+          max-width: 49%;
+          width: 100%;
+          padding: 1rem;
+          font-size: 1rem;
+          color: $colorWhiteText;
+          background: $color001;
+          border-radius: 0.8rem;
+          margin: 0.7rem 0;
+          &::placeholder {
+            color: $color1;
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: $colorWhiteText;
+        background: $color001;
+        border-radius: 0.8rem;
+        margin: 0.7rem 0;
+        cursor: pointer;
+        &::placeholder {
+          color: $color3;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .btn {
+      margin-top: 2rem;
+      cursor: pointer;
+    }
+  }
+}
