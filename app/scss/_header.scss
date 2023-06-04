@@ -1,0 +1,88 @@
+html {
+  scroll-behavior: smooth;
+}
+.logo {
+  // width: 20%;
+
+  img {
+    width: 160px;
+    height: 50px;
+  }
+}
+// fixed menu*****************
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vh 5vw;
+
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: $bg;
+  backdrop-filter: blur(50px);
+}
+
+nav {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background: $bg;
+    // height: 5vh;
+
+    li {
+      margin: 0 3px;
+      a {
+        font-size: $font-size;
+        background: $color001;
+        color: $colorWhiteText;
+        padding: 3px 20px;
+        border-radius: 20px;
+        font: "Montserrat";
+      }
+    }
+  }
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a:active {
+  background: $color00;
+  color: $colorWhiteText;
+}
+
+.activeMenu {
+  background: $color00;
+  color: $colorWhiteText;
+}
+// ***************
+#menu-icon {
+  display: none;
+  font-size: 3rem;
+  color: $color00;
+}
+
+.hidden {
+  display: none;
+}
+
+// *************
+.section-progress-bar {
+  position: sticky;
+  position: absolute;
+  background: $color00;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  // top: 58px;
+  top: 50px;
+}
+.progress-bar {
+  height: 2px;
+  position: relative;
+  left: -100%;
+  top: 0;
+  background: $color;
+}

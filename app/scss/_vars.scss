@@ -1,0 +1,113 @@
+$font-family00: "Montserrat", sans-serif;
+
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1200 + px;
+$md1: $maxWidthContainer + 12 + px;
+$md2: 991.98 + px;
+$md3: 767.98 + px;
+$md4: 479.98 + px;
+$alpha: 1;
+$color: #0909f5;
+//неактивний колір
+$color001: #9a82b1;
+// активний колір
+$color00: #965ba7;
+
+$color01: #323946;
+
+$color1: #dadaea;
+$color2: #7f3ddb;
+$color3: #a3aeb7;
+$bg: #f8f8f8;
+$bgdark: #2d2d2d;
+$colorDarkText: #2d2d2d;
+$colorWhiteText: #f8f8f8;
+
+$font-size: 14 + px;
+@mixin f400 {
+  font-size: $font-size;
+  font-family: $font-family00, serif;
+  font-weight: 400;
+}
+
+@mixin f600 {
+  font-family: $font-family00, serif;
+  font-weight: 600;
+}
+@mixin f700 {
+  font-family: $font-family00, serif;
+  font-weight: 700;
+}
+
+// ***************
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #d6dee5 !default;
+$gray-400: #c1ccd3 !default;
+$gray-500: #a3aeb7 !default;
+$gray-600: #798892 !default;
+$gray-700: #495057 !default;
+$gray-800: #3c484f !default;
+$gray-900: #29323a !default;
+$black: #000 !default;
+$gray-light: $gray-100 !default;
+
+$blue: #005792 !default;
+$indigo: #7f3ddb !default;
+$purple: #1a86d0 !default;
+$pink: #e54e9a !default;
+$red: #e30613 !default;
+$orange: #ff7d47 !default;
+$yellow: #fda700 !default;
+$green: #68ca66 !default;
+$teal: #21ae8c !default;
+$cyan: #17a2b8 !default;
+$dark-gray: #d7dfe6 !default;
+$gray-inverse: #002b49 !default;
+$subtle-white: #eaf0f6 !default;
+
+$theme-colors: (
+  primary: $red,
+  secondary: $gray-600,
+  success: $teal,
+  info: $purple,
+  warning: $yellow,
+  danger: $orange,
+  dark: $gray-800,
+  inverse: $gray-inverse,
+  gray: $gray-300,
+  light: $gray-100,
+  default: #e9ecef,
+  primary-light: #dee4ee,
+  success-light: #ecfaec,
+  info-light: #f2fafa,
+  warning-light: #fdf7e6,
+  danger-light: #fff2ef,
+);
+$color-primary: blue;
+$color-text: black;
+$color-bg: white;
+/* Инверсия */
+$color-primary-invert: red;
+$color-text-invert: white;
+$color-bg-invert: black;
+
+// .component {
+//   color: $color-text;
+//   background-color: $color-bg;
+
+//   a {
+//     color: $color-primary;
+//   }
+// }
+
+// .component--dark {
+//   color: $color-text-invert;
+//   background-color: $color-bg-invert;
+
+//   a {
+//     color: $color-primary-invert;
+//   }
+// }
